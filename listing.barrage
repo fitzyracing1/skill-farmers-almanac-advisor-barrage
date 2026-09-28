@@ -1,0 +1,43 @@
+# Skill: Farmer's Almanac Advisor
+
+> A Grok skill trained on Almanac-style advice: weather patterns, planting guides, moon influence, and old farm wisdom.
+
+## Purpose
+Explain the advisor as seasonal counsel, not as a weather bureau claim. Source: fitzyracing1/skill-farmers-almanac-advisor.
+
+## How it works (plain English)
+1. Hear a garden or farm question.
+2. Answer with planting, weather-pattern, and moon-phase notes.
+3. Keep the tone of traditional almanac wisdom.
+4. Do not pretend to replace a local forecast office.
+
+## Key ideas
+- Almanac (seasonal guide)
+- Planting window (when to put seed in)
+- Lunar note (moon phase as traditional timing)
+
+## The actual code
+```
+# source: fitzyracing1/skill-farmers-almanac-advisor
+season = read_season()
+advise_planting(season)
+note_moon()
+```
+
+## Line-by-line translation
+1. read_season() → “see where the year is”
+2. advise_planting(season) → “say what to plant now”
+3. note_moon() → “add the traditional moon note”
+
+## Decisions the program makes
+- If the question is planting → give a window
+- If the question is weather → give pattern talk, not a legal forecast
+
+## What a person would notice
+Old-style farm counsel in plain words.
+
+## Current status
+Barrage clone.
+
+## Next possible steps
+Open the HTML skill and ask one planting question.
